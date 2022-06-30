@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carreras de autos</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+   
+
+    <!-- IMPORTAR LIBRERÍAS PARA FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+
+    <!-- PEGAR SDK DE LA BASE DE DATOS -->
+    <script>
+      //  INICIALIZAR firebaseConfig CONFIGURÁNDOLA CON LA INFORMACIÓN DE LA BASE DE DATOS
+      const firebaseConfig = {
+        apiKey: "AIzaSyDkrKLSMu9Y-UN2DfzmNWRT3MrjrPpgv10",
+        authDomain: "jp-carrera-de-autos.firebaseapp.com",
+        databaseURL: "https://jp-carrera-de-autos-default-rtdb.firebaseio.com",
+        projectId: "jp-carrera-de-autos",
+        storageBucket: "jp-carrera-de-autos.appspot.com",
+        messagingSenderId: "434668684271",
+        appId: "1:434668684271:web:2261b4a00ba52e3cb3ec1a"
+      };
+      
+      //  INICIALIZAR CONEXIÓN A LA BASE DE DATOS CON LA CONFIGURACIÓN DE LA BASE DE DATOS
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+   
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
